@@ -1,0 +1,1 @@
+C:\LibreOffice\program\soffice.exe --headless --nofirststartwizard --accept="socket,host=0.0.0.0,port=8101;urp;"
