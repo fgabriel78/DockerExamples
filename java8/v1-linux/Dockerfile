@@ -1,9 +1,8 @@
 FROM ubuntu:16.04
-MAINTAINER Aytos Soluciones Informáticas
+MAINTAINER Gabriel Munoz
 
-# Añade el repositorio  webupd8 de Ubuntu Trusty
 RUN \
-	echo "===> Añadiendo el repositorio de Java 8..."  && \
+	echo "===> Anadiendo el repositorio de Java 8..."  && \
 	echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list  && \
 	echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list  && \
 	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886  && \
